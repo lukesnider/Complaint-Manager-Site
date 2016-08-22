@@ -10,6 +10,10 @@ COLOR
 header{
     background-color: #999999;
 }
+
+.headerClicked{
+    background-color: #fff;
+}
 h1 {
     color: #fff;
 }
