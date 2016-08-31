@@ -4,35 +4,22 @@
     <meta charset="utf-8">
     <title>Welcome to Complaint Manager</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="script/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/script/app.js"></script>
+
   </head>
-  <header>
-    <h1>Welcome to Complaint Manager</h1>
-    <nav>
-    </nav>
-  </header>
   <body>
+    <h1>Welcome to Complaint Manager</h1>
     <div class="login">
-      <form class="register-form">
-        <ul id="register-list">
-          <li><input id="name" type="text" placeholder="name"/></li>
-          <li><input type="password" placeholder="password"/></li>
-          <li><input type="text" placeholder="email address"/></li>
-          <li><button id="create-button">Create</button></li>
-        </ul>
-        <p>Already registered?</p>
+
       </form>
       <form class="login-form">
         <ul id="register-list">
-          <li><input type="text" placeholder="name"/></li>
-          <li><input type="password" placeholder="password"/></li>
-          <li><button>login</button></li>
+          <li><input id="email" type="text" placeholder="email"/></li>
+          <li><input id="password" type="password" placeholder="password"/></li>
+          <li><button id="login-button">login</button></li>
       </form>
     </div>
   </body>
-
-  <script>
-
-  </script>
 </html>

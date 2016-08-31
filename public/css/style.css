@@ -7,45 +7,93 @@ GENERAL
 COLOR
 *****************************/
 
-header{
-    background-color: #999999;
-}
 
-.headerClicked{
-    background-color: #fff;
-}
-h1 {
-    color: #fff;
-}
+
 html {
-    background-color: #fff;  
+    background-color: #99ccff;  
+}
+.login{
+    background: #fff;
 }
 
 /***************************
 HEAD
 *****************************/
 
-header {
-    text-align: center;
-    padding: 35px;
-    border-radius: 20px;
-}
 
 /***************************
 BODY
 *****************************/
 
+.dashboard {
+    display: none;
+}
+.complaints {
+    display: none;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+#complaint-list #complaint_div {
+    text-align: center;
+    font-weight: bold;
+    margin: 1% 10%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#complaint-list #complaint_div #dateTime{
+    text-align: right;
+}
+#nav_links li {
+    display: inline;
+
+}
 ul{
     list-style-type: none;
-    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 li {
     margin: 10px;
 }
+#nav_links li:hover {
+    font-weight: bold;
+}
 .login {
     text-align: center;
-    margin: 0;
+    margin: 5% 35% 5% 35%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 p{
     margin: 0;
+}
+input {
+    max-width: 100%;    
+}
+button{
+    max-width: 100%;
+}
+#welcome-div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/***************************
+FOOTER
+*****************************/
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    text-align: center;
+}
+#copyright{
+    font-size: 0.75em;
+    padding-top: 2px;
 }
