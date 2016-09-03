@@ -10,32 +10,39 @@ COLOR
 
 
 html {
-    background-color: #99ccff;  
+    background-color: #95cbe9;  
 }
-.login{
+#login_div{
     background: #fff;
 }
 
 /***************************
-HEAD
+HEADER
 *****************************/
-
+#logged_in_header {
+    background-color: #efd279;
+    margin: 10px 5px 20px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
 
 /***************************
 BODY
 *****************************/
 
-.dashboard {
+.dashboard{
+    text-align: center;
     display: none;
 }
 .complaints {
     display: none;
 }
 
+
 h1,h2,h3 {
     text-align: center;
 }
-#complaint-list #complaint_div {
+#complaint-list div {
     text-align: center;
     font-weight: bold;
     margin: 1% 10%;
@@ -43,8 +50,16 @@ h1,h2,h3 {
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#complaint-list #complaint_div #dateTime{
-    text-align: right;
+#complaint-list div p{
+    word-wrap: break-word;
+    padding: 5px;
+    font-style: normal;
+}
+#dateTime{
+    text-align: left;
+}
+#location {
+    font-size: .75em;
 }
 #nav_links li {
     display: inline;
@@ -61,7 +76,7 @@ li {
 #nav_links li:hover {
     font-weight: bold;
 }
-.login {
+#login_div {
     text-align: center;
     margin: 5% 35% 5% 35%;
     padding: 10px;
@@ -76,9 +91,31 @@ input {
 button{
     max-width: 100%;
 }
-#welcome-div {
-    text-align: center;
-    margin-top: 10px;
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.header{
+    padding: 10px;
+}
+.logged_out_class,.logged_in_class {
+    padding-bottom: 50px;
+}
+
+#complaint-list div button {
+    background-color: #fff;
+    border: none;
+    display: inline-block;
+    padding: 2px;
+}
+#complaint-list div button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 /***************************
@@ -86,14 +123,14 @@ FOOTER
 *****************************/
 
 #footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 10px;
     font-size: 1em;
     text-align: center;
+    left: 0;
 }
 #copyright{
     font-size: 0.75em;
-    padding-top: 2px;
 }

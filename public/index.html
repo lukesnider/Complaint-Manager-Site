@@ -6,20 +6,31 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="/script/app.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
 
   </head>
   <body>
-    <h1>Welcome to Complaint Manager</h1>
-    <div class="login">
+    <div id="wrapper">
 
-      </form>
-      <form class="login-form">
-        <ul id="register-list">
-          <li><input id="email" type="text" placeholder="email"/></li>
-          <li><input id="password" type="password" placeholder="password"/></li>
-          <li><button id="login-button">login</button></li>
-      </form>
+      <div class="logged_out_class">
+        <div class="header" id="logged_out_header">
+          <h1>Welcome to Complaint Manager</h1>
+        </div>
+        <div id="login_div">
+
+          </form>
+          <form id="login-form">
+            <ul id="register-list">
+              <li><input id="email" type="text" placeholder="email"/></li>
+              <li><input id="password" type="password" placeholder="password"/></li>
+              <li><button id="login_button">login</button></li>
+          </form>
+        </div>
+        </div>
+
+      <div id="footer">
+      <p id="copyright">&copy; 2016 Luke Snider</p>
+      </div>
     </div>
   </body>
 </html>

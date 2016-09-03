@@ -6,25 +6,31 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="/script/app.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
+
   </head>
   <body>
-    <h1 id="usergroup_header"></h1>
-    <h2 id="username_header"></h2>
-    <ul id="nav_links">
-      <li id="dashboard_link"><a href='#dashboard'>Home</a></li>
-      <li id='complaint_link'><a href='#complaints'>Complaints</a></li>
-    </ul>
-    <div class="dashboard" id="div_dashboard">
-      <p>HEllo</p>
-    </div>
-    <div class="complaints" id="div_complaints">
-      <div id="complaint-list"></div>
-
+    <div id="wrapper">
+        <div class="logged_in_class">
+            <div class="header" id="logged_in_header">
+                <h1 id="usergroup_header"></h1>
+                <h2 id="username_header"></h2>
+                <ul id="nav_links">
+                    <li id="dashboard_link"><a href="#dashboard">Dashboard</a></li>
+                    <li id="complaint_link"><a href="#complaints">Complaints</a></li>
+                </ul>
+            </div>
+            <div class="dashboard" id="div_dashboard">
+                <p>hello</p>
+            </div>
+            <div class="complaints" id="div_complaints">
+            <div id="complaint-list"></div>
+            </div>
+        </div>
+      <div id="footer">
+      <button id="logout-button">Logout</button>
+      <p id="copyright">&copy; 2016 Luke Snider</p>
+      </div>
     </div>
   </body>
-  <div id="footer">
-    <button id="logout-button">Logout</button>
-    <p id="copyright">&copy; 2016 Luke Snider</p>
-  </div>
 </html>
