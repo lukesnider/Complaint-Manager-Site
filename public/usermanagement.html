@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Complaint Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script/usermanagement.js"></script>
+ 
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+            <div class="header" id="logged_in_header">
+                <h1 class="home_titles" id="usergroup_header"></h1>
+                <h2 class="home_titles" id="username_header"></h2>
+                <ul id="nav_links">
+                    <li id="dashboard_link"><a href="#home">Home</a></li>
+                </ul>
+            </div>
+
+                <div id="dashboard_lists">
+                    <div>
+                        <h3>Users:</h3>
+                        <ul id="user_list">
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Locations:</h3>
+                        <ul id="dashboard_location_list">
+                        </ul>
+                    </div>
+
+                </div>
+              <div class="body" id="new_user">
+                  <h3>Add New User</h3>
+              </div>
+
+    </div>
+
+
+
+
+
+</html>

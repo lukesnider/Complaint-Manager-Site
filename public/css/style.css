@@ -10,29 +10,78 @@ COLOR
 
 
 html {
-    background-color: #95cbe9;  
+    background-color: #f5f4f0;  
 }
 #login_div{
     background: #fff;
+}
+
+#unresolved_complaint_list div{
+    background-color: #ffcccc;
+}
+#resolved_complaint_list div{
+    background-color: #ccffcc;
+}
+#logged_in_header {
+    background: #fff;
+
 }
 
 /***************************
 HEADER
 *****************************/
 #logged_in_header {
-    background-color: #efd279;
-    margin: 10px 5px 20px 5px;
+    margin: 10px 0px 20px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
+}
+.home_titles{
+    text-align: left;
+}
+.complaint_headers{
+    display: none;
+
+}
+#resolved_div{
+    float: right;
+    width: 47%;
+
+}
+#unresolved_div{
+    float: left;
+    width: 47%;
+
 }
 
 /***************************
 BODY
 *****************************/
 
+#dashboard_location_list,#user_list {
+    width: 100%;
+}
+#dashboard_lists div{
+    background-color: #fff;
+    margin-left: 10%;
+    margin-right: 75%;
+    text-align: left;
+}
+#dashboard_lists {
+    float: left;
+    width: 47%;
+}
+
+#new_user{
+
+    float: right;
+    width: 47%;
+}
+
+#unresolved_complaint_list div ,#resolved_complaint_list div {
+    display: none;
+}
 .dashboard{
     text-align: center;
-    display: none;
+    position: relative;
 }
 .complaints {
     display: none;
@@ -42,28 +91,40 @@ BODY
 h1,h2,h3 {
     text-align: center;
 }
-#complaint-list div {
+
+.complaints div  div{
+
     text-align: center;
     font-weight: bold;
     margin: 1% 10%;
     padding: 10px;
-    background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
 }
-#complaint-list div p{
+
+.complaints div p{
     word-wrap: break-word;
     padding: 5px;
     font-style: normal;
 }
-#dateTime{
+p[id$="_dateTime"]{
     text-align: left;
 }
-#location {
+p[id$="_location"] {
     font-size: .75em;
+    text-align: left;
+}
+p[id$="_complaintType"] {
+    font-size: .75em;
+    text-align: left;
 }
 #nav_links li {
     display: inline;
+    color: #fff;
 
+}
+#complaints_location_list li {
+    display: inline;
 }
 ul{
     list-style-type: none;
@@ -107,29 +168,127 @@ body{
     padding-bottom: 50px;
 }
 
-#complaint-list div button {
-    background-color: #fff;
+.delete_complaint_button {
+    background: url("../img/delete_1x.png") no-repeat center 43%;
+    width: 25px;
+    height: 25px;
+	text-indent: -9999px;
     border: none;
     display: inline-block;
     padding: 2px;
+    border-radius: 8px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
-#complaint-list div button:hover{
+.complaints div button:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
+
+a.new_complaint:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+a.new_complaint {
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #fff url("../img/ic_add_black_24dp_1x.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+#add_new_location_link {
+    padding: 0;
+}
+
+#complaints_div {
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+#unresolved_complaint_list {
+    float: left;
+    width: 47%;
+
+}
+#resolved_complaint_list{
+    float: right;
+    width: 47%;
+}
+/***************************
+NEW COMPLAINT POP UP BOX
+*****************************/
+
+.new_complaint_box,.edit_complaint_box,.add_location_box {
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.new_complaint_box_content,
+.edit_complaint_box_content,
+.add_location_box_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.new_complaint_close,.edit_complaint_close,
+.add_location_close {
+    position: relative;
+    top: 5px;
+    right: 5px;
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+	background: #fff url("../img/ic_clear_black_24dp_1x.png") no-repeat center 43%;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.new_complaint_close:hover,
+.new_complaint_close:focus,
+.edit_complaint_close:hover,
+.edit_complaint_close:focus,
+.add_location_close:hover,
+.add_location_close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /***************************
 FOOTER
 *****************************/
 
 #footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 10px;
     font-size: 1em;
     text-align: center;
     left: 0;
+    clear: both;
 }
 #copyright{
     font-size: 0.75em;
