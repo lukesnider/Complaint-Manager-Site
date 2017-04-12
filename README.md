@@ -1,5 +1,7 @@
 # Complaint-Manager-Site
 Site for Complaint Manager Application
 
-This can be viewed at http://cm.lukecsnider.com
-Demo@SniderWebDevlopment.com / youshallpass
+<p>This site can be viewed <a href="http://cm.lukecsnider.com">here</a></p>
+
+<p>Login with these credentials</p>
+<p>Demo@SniderWebDevlopment.com / youshallpass</p>
